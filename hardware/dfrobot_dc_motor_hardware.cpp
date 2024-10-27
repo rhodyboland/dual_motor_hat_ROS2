@@ -105,8 +105,10 @@ hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_activate(
 hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_deactivate(
     const rclcpp_lifecycle::State& /*previous_state*/) {
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Deactivating ...please wait...");
-    dfrobot_->motorStop(DFRobotDCMotor::ALL);
-    dfrobot_->setEncoderDisable(DFRobotDCMotor::ALL);
+    dfrobot_->motorStop(DFRobotDCMotor::M1);
+    dfrobot_->motorStop(DFRobotDCMotor::M2);
+    dfrobot_->setEncoderDisable(DFRobotDCMotor::M1);
+    dfrobot_->setEncoderDisable(DFRobotDCMotor::M2);
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Successfully deactivated!");
 
     return hardware_interface::CallbackReturn::SUCCESS;
