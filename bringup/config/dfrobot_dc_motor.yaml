@@ -8,6 +8,8 @@ controller_manager:
     diffbot_base_controller:
       type: diff_drive_controller/DiffDriveController
 
+
+
 diffbot_base_controller:
   ros__parameters:
     left_wheel_names: ["left_wheel_joint"]
@@ -20,7 +22,6 @@ diffbot_base_controller:
     wheel_separation_multiplier: 1.0
     left_wheel_radius_multiplier: 1.0
     right_wheel_radius_multiplier: 1.0
-
     publish_rate: 50.0
     odom_frame_id: odom
     base_frame_id: base_link
@@ -32,7 +33,7 @@ diffbot_base_controller:
 
     cmd_vel_timeout: 0.5
     #publish_limited_velocity: true
-    use_stamped_vel: false
+    
     #velocity_rolling_window_size: 10
 
     # Velocity and acceleration limits

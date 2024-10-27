@@ -1,21 +1,21 @@
-// dfrobot_dc_motor_hardware.hpp
-
 #ifndef DFROBOT_DC_MOTOR_HARDWARE_HPP_
 #define DFROBOT_DC_MOTOR_HARDWARE_HPP_
 
-#include <memory>  // Add this include
+#include <memory>
 #include <string>
 #include <vector>
 
-#include "dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp"
-#include "dfrobot_dc_motor_hardware/visibility_control.h"
+#include "dfrobot_dc_motor.hpp"
 #include "dfrobot_dc_motor_hardware/wheel.hpp"
 #include "hardware_interface/system_interface.hpp"
 #include "hardware_interface/types/hardware_interface_return_values.hpp"
 #include "rclcpp/macros.hpp"
 
+// Include the visibility control header
+#include "dfrobot_dc_motor_hardware/visibility_control.h"
+
 namespace dfrobot_dc_motor_hardware {
-class DFRobotDCMotorHardware : public hardware_interface::SystemInterface {
+class DFROBOT_DC_MOTOR_HARDWARE_PUBLIC DFRobotDCMotorHardware : public hardware_interface::SystemInterface {
    public:
     RCLCPP_SHARED_PTR_DEFINITIONS(DFRobotDCMotorHardware);
 
@@ -53,12 +53,12 @@ class DFRobotDCMotorHardware : public hardware_interface::SystemInterface {
         std::string right_wheel_name = "";
         int bus_id = 1;
         uint8_t i2c_address = 0x10;
-        int encoder_reduction_ratio = 30;
-        int max_rpm = 200;  // Adjust this value based on your motor
+        int encoder_reduction_ratio = 210;
+        int max_rpm = 75;
     };
 
     Config cfg_;
-    std::unique_ptr<DFRobotDCMotor> dfrobot_;  // Change to unique_ptr
+    std::unique_ptr<DFRobotDCMotor> dfrobot_;
     Wheel wheel_l_;
     Wheel wheel_r_;
 

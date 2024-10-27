@@ -37,7 +37,10 @@ ament_target_dependencies(
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
-# target_link_libraries(dfrobot_dc_motor_hardware PUBLIC serial)
+# target_link_libraries(dfrobot_dc_motor_hardware PRIVATE i2c)
+target_compile_definitions(dfrobot_dc_motor_hardware PRIVATE
+  "-DLINUX_I2C_DEV"
+)
 
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
@@ -51,8 +54,9 @@ install(
   DIRECTORY hardware/include/
   DESTINATION include/dfrobot_dc_motor_hardware
 )
+# description/launch
 install(
-  DIRECTORY description/launch description/ros2_control description/urdf description/rviz
+  DIRECTORY description/ros2_control description/urdf description/rviz
   DESTINATION share/dfrobot_dc_motor_hardware
 )
 install(
