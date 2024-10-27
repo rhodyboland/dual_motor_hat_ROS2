@@ -1,0 +1,7 @@
+<library path="libdfrobot_dc_motor_hardware.so">
+  <class name="dfrobot_dc_motor_hardware/DFRobotDCMotorHardware" type="dfrobot_dc_motor_hardware::DFRobotDCMotorHardware" base_class_type="hardware_interface::SystemInterface">
+    <description>
+      DFRobot DC Motor Hardware Interface with Odometry
+    </description>
+  </class>
+</library>
