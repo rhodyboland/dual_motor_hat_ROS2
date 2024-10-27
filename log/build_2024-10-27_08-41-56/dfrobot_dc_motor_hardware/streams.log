@@ -1,0 +1,38 @@
+[0.051s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[0.389s] -- The CXX compiler identification is GNU 13.2.0
+[0.474s] -- Detecting CXX compiler ABI info
+[0.964s] -- Detecting CXX compiler ABI info - done
+[1.001s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.002s] -- Detecting CXX compile features
+[1.004s] -- Detecting CXX compile features - done
+[1.023s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.709s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.255s] -- Found hardware_interface: 4.18.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.526s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.605s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.694s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.791s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.762s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.989s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.007s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.130s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.419s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.433s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.486s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.499s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.538s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.577s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.669s] -- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[6.097s] -- Configuring done (6.0s)
+[6.192s] -- Generating done (0.0s)
+[6.205s] -- Build files have been written to: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware
+[6.246s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[6.253s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4
+[6.563s] [ 33%] [32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o[0m
+[28.271s] [ 66%] [32m[1mLinking CXX shared library libdfrobot_dc_motor_hardware.so[0m
+[28.415s] /usr/bin/ld: cannot find -lserial: No such file or directory
+[29.086s] collect2: error: ld returned 1 exit status
+[29.096s] gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:255: libdfrobot_dc_motor_hardware.so] Error 1
+[29.098s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2
+[29.100s] gmake: *** [Makefile:146: all] Error 2
+[29.108s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4

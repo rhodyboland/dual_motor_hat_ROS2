@@ -1,0 +1,13 @@
+[01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kdfrobot_dc_motor_hardware.hpp: No such file or directory
+    3 | #include [01;31m[K"dfrobot_dc_motor_hardware.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kdfrobot_dc_motor.hpp: No such file or directory
+    3 | #include [01;31m[K"dfrobot_dc_motor.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:76: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:90: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

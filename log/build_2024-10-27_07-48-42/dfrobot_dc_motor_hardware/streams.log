@@ -1,0 +1,44 @@
+[0.046s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[0.365s] -- The C compiler identification is GNU 13.2.0
+[0.671s] -- The CXX compiler identification is GNU 13.2.0
+[0.765s] -- Detecting C compiler ABI info
+[1.250s] -- Detecting C compiler ABI info - done
+[1.287s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.291s] -- Detecting C compile features
+[1.293s] -- Detecting C compile features - done
+[1.340s] -- Detecting CXX compiler ABI info
+[1.866s] -- Detecting CXX compiler ABI info - done
+[1.903s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.904s] -- Detecting CXX compile features
+[1.906s] -- Detecting CXX compile features - done
+[1.926s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.650s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.238s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.476s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.561s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.657s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.754s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.125s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.143s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.567s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.637s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.727s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.058s] -- Found hardware_interface: 4.18.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[6.597s] -- Found ros2_control: 4.18.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[6.611s] -- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[6.723s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[6.751s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[7.061s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[7.155s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[7.161s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.161s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[7.177s] [31mCMake Error at /opt/ros/jazzy/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake:84 (message):
+[7.178s]   Given plugin description file
+[7.178s]   '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/plugin_description/hardware_plugins.xml'
+[7.179s]   does not exist
+[7.179s] Call Stack (most recent call first):
+[7.180s]   CMakeLists.txt:86 (pluginlib_export_plugin_description_file)
+[7.180s] 
+[7.181s] [0m
+[7.181s] -- Configuring incomplete, errors occurred!
+[7.221s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware

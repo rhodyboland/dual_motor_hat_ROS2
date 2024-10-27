@@ -1,0 +1,59 @@
+[0.048s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[0.390s] -- The CXX compiler identification is GNU 13.2.0
+[0.473s] -- Detecting CXX compiler ABI info
+[0.961s] -- Detecting CXX compiler ABI info - done
+[0.998s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.999s] -- Detecting CXX compile features
+[1.001s] -- Detecting CXX compile features - done
+[1.020s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.684s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.227s] -- Found hardware_interface: 4.18.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.499s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.580s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.670s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.770s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.721s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.947s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.966s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.088s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.374s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.388s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.442s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.456s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.493s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.531s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.621s] -- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[6.039s] -- Configuring done (6.0s)
+[6.136s] -- Generating done (0.0s)
+[6.146s] -- Build files have been written to: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware
+[6.185s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[6.192s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4
+[6.500s] [ 33%] [32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o[0m
+[6.503s] [ 66%] [32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor.cpp.o[0m
+[23.466s] In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58[m[K,
+[23.467s]                  from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[23.468s]                  from [01m[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[23.468s]                  from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:149[m[K:
+[23.469s] /opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::[01;32m[Kcreate[m[K() const [35m[K[with C = dfrobot_dc_motor_hardware::DFRobotDCMotorHardware; B = hardware_interface::SystemInterface][m[K[m[K’:
+[23.470s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[23.470s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[KDFRobotDCMotorHardware[m[K()[m[K’
+[23.471s]   218 |     return [01;31m[Knew C[m[K;
+[23.471s]       |            [01;31m[K^~~~~[m[K
+[23.472s] In file included from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:3[m[K:
+[23.472s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:17:7:[m[K [01;36m[Knote: [m[K‘[01m[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[KDFRobotDCMotorHardware[m[K()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[23.473s]    17 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[23.473s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.474s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:17:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDFRobotDCMotor::DFRobotDCMotor()[m[K’
+[23.474s] In file included from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:10[m[K:
+[23.475s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:17:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDFRobotDCMotor::[01;32m[KDFRobotDCMotor[m[K(int, uint8_t)[m[K’
+[23.476s]    17 |     [01;36m[KDFRobotDCMotor[m[K(int bus_id, uint8_t addr);
+[23.477s]       |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[23.478s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:17:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[23.479s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:15:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr DFRobotDCMotor::[01;32m[KDFRobotDCMotor[m[K(const DFRobotDCMotor&)[m[K’
+[23.480s]    15 | class [01;36m[KDFRobotDCMotor[m[K {
+[23.481s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[23.482s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:15:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[23.991s] gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:76: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o] Error 1
+[23.992s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2
+[23.993s] gmake: *** [Makefile:146: all] Error 2
+[24.001s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4

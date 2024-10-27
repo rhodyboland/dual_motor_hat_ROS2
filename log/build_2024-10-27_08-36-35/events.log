@@ -1,0 +1,306 @@
+[0.000000] (-) TimerEvent: {}
+[0.000937] (dfrobot_dc_motor_hardware) JobQueued: {'identifier': 'dfrobot_dc_motor_hardware', 'dependencies': OrderedDict()}
+[0.001875] (dfrobot_dc_motor_hardware) JobStarted: {'identifier': 'dfrobot_dc_motor_hardware'}
+[0.034808] (dfrobot_dc_motor_hardware) JobProgress: {'identifier': 'dfrobot_dc_motor_hardware', 'progress': 'cmake'}
+[0.036089] (dfrobot_dc_motor_hardware) Command: {'cmd': ['/usr/bin/cmake', '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware', '-DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware'], 'cwd': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rhody', 'SSH_CLIENT': '192.168.2.2 46477 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/rhody', 'OLDPWD': '/home/rhody/box_bot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rhody', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.2 46477 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099301] (-) TimerEvent: {}
+[0.200039] (-) TimerEvent: {}
+[0.301011] (-) TimerEvent: {}
+[0.391790] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.401184] (-) TimerEvent: {}
+[0.474777] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501383] (-) TimerEvent: {}
+[0.602138] (-) TimerEvent: {}
+[0.702853] (-) TimerEvent: {}
+[0.803537] (-) TimerEvent: {}
+[0.904330] (-) TimerEvent: {}
+[0.963139] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.000283] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.001365] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.003194] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.004428] (-) TimerEvent: {}
+[1.021797] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.104637] (-) TimerEvent: {}
+[1.205380] (-) TimerEvent: {}
+[1.306042] (-) TimerEvent: {}
+[1.406736] (-) TimerEvent: {}
+[1.507385] (-) TimerEvent: {}
+[1.607981] (-) TimerEvent: {}
+[1.685632] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.708208] (-) TimerEvent: {}
+[1.808913] (-) TimerEvent: {}
+[1.909574] (-) TimerEvent: {}
+[2.010223] (-) TimerEvent: {}
+[2.110832] (-) TimerEvent: {}
+[2.211485] (-) TimerEvent: {}
+[2.229139] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found hardware_interface: 4.18.0 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[2.311706] (-) TimerEvent: {}
+[2.412451] (-) TimerEvent: {}
+[2.500539] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.512625] (-) TimerEvent: {}
+[2.582266] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.612777] (-) TimerEvent: {}
+[2.672226] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.712936] (-) TimerEvent: {}
+[2.771393] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.813156] (-) TimerEvent: {}
+[2.913826] (-) TimerEvent: {}
+[3.014487] (-) TimerEvent: {}
+[3.115167] (-) TimerEvent: {}
+[3.215816] (-) TimerEvent: {}
+[3.316549] (-) TimerEvent: {}
+[3.417247] (-) TimerEvent: {}
+[3.517933] (-) TimerEvent: {}
+[3.618649] (-) TimerEvent: {}
+[3.719287] (-) TimerEvent: {}
+[3.722521] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[3.819453] (-) TimerEvent: {}
+[3.920196] (-) TimerEvent: {}
+[3.949200] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.968269] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.020368] (-) TimerEvent: {}
+[4.090118] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.120565] (-) TimerEvent: {}
+[4.221313] (-) TimerEvent: {}
+[4.322046] (-) TimerEvent: {}
+[4.375908] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[4.390275] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.422194] (-) TimerEvent: {}
+[4.444327] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[4.457258] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.494804] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.522378] (-) TimerEvent: {}
+[4.533312] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.622522] (-) TimerEvent: {}
+[4.723145] (-) TimerEvent: {}
+[4.823732] (-) TimerEvent: {}
+[4.924367] (-) TimerEvent: {}
+[5.024971] (-) TimerEvent: {}
+[5.125765] (-) TimerEvent: {}
+[5.226590] (-) TimerEvent: {}
+[5.327460] (-) TimerEvent: {}
+[5.428261] (-) TimerEvent: {}
+[5.529092] (-) TimerEvent: {}
+[5.623043] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[5.629229] (-) TimerEvent: {}
+[5.729829] (-) TimerEvent: {}
+[5.830555] (-) TimerEvent: {}
+[5.931193] (-) TimerEvent: {}
+[6.031851] (-) TimerEvent: {}
+[6.040932] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Configuring done (6.0s)\n'}
+[6.132023] (-) TimerEvent: {}
+[6.137473] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[6.148347] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'-- Build files have been written to: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware\n'}
+[6.187286] (dfrobot_dc_motor_hardware) CommandEnded: {'returncode': 0}
+[6.188973] (dfrobot_dc_motor_hardware) JobProgress: {'identifier': 'dfrobot_dc_motor_hardware', 'progress': 'build'}
+[6.191195] (dfrobot_dc_motor_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', '--', '-j4', '-l4'], 'cwd': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rhody', 'SSH_CLIENT': '192.168.2.2 46477 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/rhody', 'OLDPWD': '/home/rhody/box_bot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rhody', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.2 46477 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[6.232236] (-) TimerEvent: {}
+[6.332936] (-) TimerEvent: {}
+[6.433712] (-) TimerEvent: {}
+[6.502005] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o\x1b[0m\n'}
+[6.504361] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor.cpp.o\x1b[0m\n'}
+[6.533899] (-) TimerEvent: {}
+[6.634630] (-) TimerEvent: {}
+[6.735379] (-) TimerEvent: {}
+[6.836006] (-) TimerEvent: {}
+[6.936720] (-) TimerEvent: {}
+[7.037432] (-) TimerEvent: {}
+[7.138118] (-) TimerEvent: {}
+[7.238754] (-) TimerEvent: {}
+[7.339405] (-) TimerEvent: {}
+[7.440137] (-) TimerEvent: {}
+[7.540885] (-) TimerEvent: {}
+[7.641757] (-) TimerEvent: {}
+[7.742925] (-) TimerEvent: {}
+[7.843758] (-) TimerEvent: {}
+[7.944541] (-) TimerEvent: {}
+[8.045254] (-) TimerEvent: {}
+[8.145965] (-) TimerEvent: {}
+[8.247307] (-) TimerEvent: {}
+[8.350438] (-) TimerEvent: {}
+[8.452252] (-) TimerEvent: {}
+[8.553403] (-) TimerEvent: {}
+[8.654648] (-) TimerEvent: {}
+[8.755479] (-) TimerEvent: {}
+[8.856254] (-) TimerEvent: {}
+[8.957028] (-) TimerEvent: {}
+[9.057845] (-) TimerEvent: {}
+[9.158678] (-) TimerEvent: {}
+[9.259549] (-) TimerEvent: {}
+[9.360441] (-) TimerEvent: {}
+[9.461222] (-) TimerEvent: {}
+[9.563256] (-) TimerEvent: {}
+[9.664031] (-) TimerEvent: {}
+[9.764821] (-) TimerEvent: {}
+[9.865600] (-) TimerEvent: {}
+[9.966319] (-) TimerEvent: {}
+[10.067033] (-) TimerEvent: {}
+[10.168163] (-) TimerEvent: {}
+[10.268863] (-) TimerEvent: {}
+[10.369660] (-) TimerEvent: {}
+[10.470374] (-) TimerEvent: {}
+[10.571207] (-) TimerEvent: {}
+[10.671876] (-) TimerEvent: {}
+[10.772684] (-) TimerEvent: {}
+[10.873426] (-) TimerEvent: {}
+[10.974211] (-) TimerEvent: {}
+[11.074892] (-) TimerEvent: {}
+[11.175627] (-) TimerEvent: {}
+[11.276357] (-) TimerEvent: {}
+[11.377196] (-) TimerEvent: {}
+[11.477978] (-) TimerEvent: {}
+[11.578789] (-) TimerEvent: {}
+[11.679595] (-) TimerEvent: {}
+[11.780430] (-) TimerEvent: {}
+[11.881191] (-) TimerEvent: {}
+[11.981878] (-) TimerEvent: {}
+[12.082598] (-) TimerEvent: {}
+[12.183296] (-) TimerEvent: {}
+[12.283971] (-) TimerEvent: {}
+[12.384689] (-) TimerEvent: {}
+[12.485434] (-) TimerEvent: {}
+[12.586192] (-) TimerEvent: {}
+[12.686893] (-) TimerEvent: {}
+[12.787630] (-) TimerEvent: {}
+[12.888483] (-) TimerEvent: {}
+[12.989220] (-) TimerEvent: {}
+[13.089894] (-) TimerEvent: {}
+[13.190640] (-) TimerEvent: {}
+[13.291356] (-) TimerEvent: {}
+[13.392034] (-) TimerEvent: {}
+[13.492806] (-) TimerEvent: {}
+[13.593597] (-) TimerEvent: {}
+[13.694441] (-) TimerEvent: {}
+[13.795156] (-) TimerEvent: {}
+[13.895961] (-) TimerEvent: {}
+[13.996718] (-) TimerEvent: {}
+[14.097482] (-) TimerEvent: {}
+[14.198263] (-) TimerEvent: {}
+[14.298961] (-) TimerEvent: {}
+[14.399685] (-) TimerEvent: {}
+[14.500425] (-) TimerEvent: {}
+[14.601163] (-) TimerEvent: {}
+[14.701840] (-) TimerEvent: {}
+[14.802553] (-) TimerEvent: {}
+[14.903217] (-) TimerEvent: {}
+[15.003894] (-) TimerEvent: {}
+[15.104672] (-) TimerEvent: {}
+[15.205369] (-) TimerEvent: {}
+[15.306134] (-) TimerEvent: {}
+[15.406842] (-) TimerEvent: {}
+[15.507542] (-) TimerEvent: {}
+[15.608215] (-) TimerEvent: {}
+[15.708875] (-) TimerEvent: {}
+[15.809610] (-) TimerEvent: {}
+[15.910370] (-) TimerEvent: {}
+[16.011139] (-) TimerEvent: {}
+[16.111811] (-) TimerEvent: {}
+[16.212566] (-) TimerEvent: {}
+[16.313325] (-) TimerEvent: {}
+[16.414008] (-) TimerEvent: {}
+[16.514823] (-) TimerEvent: {}
+[16.615598] (-) TimerEvent: {}
+[16.716359] (-) TimerEvent: {}
+[16.817031] (-) TimerEvent: {}
+[16.917780] (-) TimerEvent: {}
+[17.018537] (-) TimerEvent: {}
+[17.119278] (-) TimerEvent: {}
+[17.219983] (-) TimerEvent: {}
+[17.320779] (-) TimerEvent: {}
+[17.421622] (-) TimerEvent: {}
+[17.522373] (-) TimerEvent: {}
+[17.623028] (-) TimerEvent: {}
+[17.723747] (-) TimerEvent: {}
+[17.824534] (-) TimerEvent: {}
+[17.925239] (-) TimerEvent: {}
+[18.025957] (-) TimerEvent: {}
+[18.126699] (-) TimerEvent: {}
+[18.227434] (-) TimerEvent: {}
+[18.328151] (-) TimerEvent: {}
+[18.428837] (-) TimerEvent: {}
+[18.529589] (-) TimerEvent: {}
+[18.630307] (-) TimerEvent: {}
+[18.730980] (-) TimerEvent: {}
+[18.831720] (-) TimerEvent: {}
+[18.932468] (-) TimerEvent: {}
+[19.033202] (-) TimerEvent: {}
+[19.133888] (-) TimerEvent: {}
+[19.234622] (-) TimerEvent: {}
+[19.335363] (-) TimerEvent: {}
+[19.436049] (-) TimerEvent: {}
+[19.536803] (-) TimerEvent: {}
+[19.637600] (-) TimerEvent: {}
+[19.738322] (-) TimerEvent: {}
+[19.839026] (-) TimerEvent: {}
+[19.939771] (-) TimerEvent: {}
+[20.040528] (-) TimerEvent: {}
+[20.141218] (-) TimerEvent: {}
+[20.241908] (-) TimerEvent: {}
+[20.342598] (-) TimerEvent: {}
+[20.443282] (-) TimerEvent: {}
+[20.543939] (-) TimerEvent: {}
+[20.644666] (-) TimerEvent: {}
+[20.745391] (-) TimerEvent: {}
+[20.846352] (-) TimerEvent: {}
+[20.947142] (-) TimerEvent: {}
+[21.047827] (-) TimerEvent: {}
+[21.148624] (-) TimerEvent: {}
+[21.249422] (-) TimerEvent: {}
+[21.350230] (-) TimerEvent: {}
+[21.450993] (-) TimerEvent: {}
+[21.551739] (-) TimerEvent: {}
+[21.652475] (-) TimerEvent: {}
+[21.753193] (-) TimerEvent: {}
+[21.853888] (-) TimerEvent: {}
+[21.954674] (-) TimerEvent: {}
+[22.055427] (-) TimerEvent: {}
+[22.156170] (-) TimerEvent: {}
+[22.256892] (-) TimerEvent: {}
+[22.357643] (-) TimerEvent: {}
+[22.458363] (-) TimerEvent: {}
+[22.559124] (-) TimerEvent: {}
+[22.659806] (-) TimerEvent: {}
+[22.760574] (-) TimerEvent: {}
+[22.861361] (-) TimerEvent: {}
+[22.962104] (-) TimerEvent: {}
+[23.062757] (-) TimerEvent: {}
+[23.163481] (-) TimerEvent: {}
+[23.264204] (-) TimerEvent: {}
+[23.364903] (-) TimerEvent: {}
+[23.465671] (-) TimerEvent: {}
+[23.467585] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58\x1b[m\x1b[K,\n'}
+[23.468954] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[23.469679] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[23.470198] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:149\x1b[m\x1b[K:\n'}
+[23.470666] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::\x1b[01;32m\x1b[Kcreate\x1b[m\x1b[K() const \x1b[35m\x1b[K[with C = dfrobot_dc_motor_hardware::DFRobotDCMotorHardware; B = hardware_interface::SystemInterface]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.471472] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[23.472091] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.472612] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[23.473051] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.473652] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:3\x1b[m\x1b[K:\n'}
+[23.474130] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:17:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[23.474656] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   17 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[23.475126] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.475621] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:17:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KDFRobotDCMotor::DFRobotDCMotor()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.476172] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:10\x1b[m\x1b[K:\n'}
+[23.476777] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:17:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KDFRobotDCMotor::\x1b[01;32m\x1b[KDFRobotDCMotor\x1b[m\x1b[K(int, uint8_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.477888] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   17 |     \x1b[01;36m\x1b[KDFRobotDCMotor\x1b[m\x1b[K(int bus_id, uint8_t addr);\n'}
+[23.478733] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.479536] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:17:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[23.480312] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:15:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr DFRobotDCMotor::\x1b[01;32m\x1b[KDFRobotDCMotor\x1b[m\x1b[K(const DFRobotDCMotor&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.481310] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   15 | class \x1b[01;36m\x1b[KDFRobotDCMotor\x1b[m\x1b[K {\n'}
+[23.482635] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.483513] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp:15:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[23.565881] (-) TimerEvent: {}
+[23.666654] (-) TimerEvent: {}
+[23.767325] (-) TimerEvent: {}
+[23.867981] (-) TimerEvent: {}
+[23.968832] (-) TimerEvent: {}
+[23.993318] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:76: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o] Error 1\n'}
+[23.994264] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2\n'}
+[23.995267] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[24.002509] (dfrobot_dc_motor_hardware) CommandEnded: {'returncode': 2}
+[24.068996] (-) TimerEvent: {}
+[24.169730] (-) TimerEvent: {}
+[24.194857] (dfrobot_dc_motor_hardware) JobEnded: {'identifier': 'dfrobot_dc_motor_hardware', 'rc': 2}
+[24.206899] (-) EventReactorShutdown: {}

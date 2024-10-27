@@ -1,0 +1,181 @@
+[0.052s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4
+[0.310s] [ 33%] [32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o[0m
+[13.081s] In file included from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:3[m[K:
+[13.082s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:47:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.082s]    47 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.082s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.084s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.106s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.106s]    50 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.107s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.107s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.131s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.131s]    53 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.132s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.132s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.156s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.156s]    56 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.157s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.157s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.181s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.181s]    59 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.182s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.182s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.206s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.206s]    62 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.207s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.207s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.231s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.231s]    65 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.232s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.232s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.255s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.256s]    68 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.256s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.257s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.280s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:71:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.281s]    71 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.281s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.282s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.305s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K’ does not name a type; did you mean ‘[01m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K’?
+[13.306s]    74 |     [01;31m[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC[m[K
+[13.306s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.307s]       |     [32m[KDFROBOT_DC_MOTOR_HARDWARE_HPP_[m[K
+[13.487s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:11:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’
+[13.488s]    11 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_init(
+[13.489s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.489s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:11:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’
+[13.490s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.490s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.492s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.493s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:58:49:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<hardware_interface::StateInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kexport_state_interfaces[m[K()[m[K’
+[13.493s]    58 | std::vector<hardware_interface::StateInterface> [01;31m[KDFRobotDCMotorHardware[m[K::export_state_interfaces() {
+[13.494s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.494s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:58:49:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<hardware_interface::StateInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kexport_state_interfaces[m[K()[m[K’
+[13.495s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.496s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.497s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.497s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:71:51:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<hardware_interface::CommandInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kexport_command_interfaces[m[K()[m[K’
+[13.498s]    71 | std::vector<hardware_interface::CommandInterface> [01;31m[KDFRobotDCMotorHardware[m[K::export_command_interfaces() {
+[13.498s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.499s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:71:51:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<hardware_interface::CommandInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kexport_command_interfaces[m[K()[m[K’
+[13.500s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.500s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.501s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.501s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:82:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_configure[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.502s]    82 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_configure(
+[13.502s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.503s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:82:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_configure[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.504s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.504s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.505s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.505s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:91:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_cleanup[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.506s]    91 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_cleanup(
+[13.506s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.507s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:91:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_cleanup[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.507s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.508s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.508s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.509s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:103:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.509s]   103 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_activate(
+[13.510s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.510s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:103:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.511s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.511s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.512s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.512s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:133:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.513s]   133 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_deactivate(
+[13.513s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.514s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:133:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.514s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.515s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.515s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.515s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:157:33:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.516s]   157 | hardware_interface::return_type [01;31m[KDFRobotDCMotorHardware[m[K::read(
+[13.516s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.517s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:157:33:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.517s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.518s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.518s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.519s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:184:33:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.520s]   184 | hardware_interface::return_type [01;31m[KDFRobotDCMotorHardware[m[K::write(
+[13.520s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.521s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:184:33:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.521s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.521s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.522s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.523s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:215:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’
+[13.523s]   215 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_init(
+[13.524s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.525s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:215:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’
+[13.525s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.526s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.526s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.527s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:221:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_configure[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.527s]   221 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_configure(
+[13.528s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.528s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:221:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_configure[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.529s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.530s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.530s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.530s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:227:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_cleanup[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.531s]   227 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_cleanup(
+[13.531s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.532s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:227:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_cleanup[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.532s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.533s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.533s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.534s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:233:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.534s]   233 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_activate(
+[13.535s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.535s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:233:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.536s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.536s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.537s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.537s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:239:36:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.538s]   239 | hardware_interface::CallbackReturn [01;31m[KDFRobotDCMotorHardware[m[K::on_deactivate(
+[13.538s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.539s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:239:36:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’
+[13.539s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.540s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.540s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.541s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:245:33:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.541s]   245 | hardware_interface::return_type [01;31m[KDFRobotDCMotorHardware[m[K::read(
+[13.543s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.544s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:245:33:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.544s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.545s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.546s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.546s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:251:33:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.547s]   251 | hardware_interface::return_type [01;31m[KDFRobotDCMotorHardware[m[K::write(
+[13.548s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.548s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:251:33:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[13.549s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’ defined here
+[13.549s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[13.550s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.550s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:257:49:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[Kvirtual dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::[01;32m[K~DFRobotDCMotorHardware[m[K()[m[K’
+[13.551s]   257 | DFRobotDCMotorHardware::~DFRobotDCMotorHardware([01;31m[K)[m[K {
+[13.551s]       |                                                 [01;31m[K^[m[K
+[17.421s] In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58[m[K,
+[17.421s]                  from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[17.422s]                  from [01m[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[17.423s]                  from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:7[m[K:
+[17.423s] /opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::[01;32m[Kcreate[m[K() const [35m[K[with C = dfrobot_dc_motor_hardware::DFRobotDCMotorHardware; B = hardware_interface::SystemInterface][m[K[m[K’:
+[17.424s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[17.425s] [01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’
+[17.425s]   218 |     return [01;31m[Knew C[m[K;
+[17.426s]       |            [01;31m[K^~~~~[m[K
+[17.426s] [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware[m[K’:
+[17.427s]    29 | class [01;36m[KDFRobotDCMotorHardware[m[K : public hardware_interface::SystemInterface {
+[17.428s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.428s] In file included from [01m[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:6[m[K:
+[17.429s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:406:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[17.429s]   406 |   virtual return_type [01;36m[Kread[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[17.430s]       |                       [01;36m[K^~~~[m[K
+[17.431s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:417:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[17.432s]   417 |   virtual return_type [01;36m[Kwrite[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[17.433s]       |                       [01;36m[K^~~~~[m[K
+[17.758s] gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:76: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o] Error 1
+[17.759s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2
+[17.759s] gmake: *** [Makefile:146: all] Error 2
+[17.767s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4

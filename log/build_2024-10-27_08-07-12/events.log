@@ -1,0 +1,366 @@
+[0.000000] (-) TimerEvent: {}
+[0.001003] (dfrobot_dc_motor_hardware) JobQueued: {'identifier': 'dfrobot_dc_motor_hardware', 'dependencies': OrderedDict()}
+[0.001864] (dfrobot_dc_motor_hardware) JobStarted: {'identifier': 'dfrobot_dc_motor_hardware'}
+[0.034214] (dfrobot_dc_motor_hardware) JobProgress: {'identifier': 'dfrobot_dc_motor_hardware', 'progress': 'cmake'}
+[0.037737] (dfrobot_dc_motor_hardware) JobProgress: {'identifier': 'dfrobot_dc_motor_hardware', 'progress': 'build'}
+[0.041339] (dfrobot_dc_motor_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', '--', '-j4', '-l4'], 'cwd': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'rhody', 'SSH_CLIENT': '192.168.2.2 46477 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/rhody', 'OLDPWD': '/home/rhody/box_bot', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'rhody', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.2.2 46477 192.168.2.3 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099204] (-) TimerEvent: {}
+[0.199903] (-) TimerEvent: {}
+[0.300582] (-) TimerEvent: {}
+[0.311795] (dfrobot_dc_motor_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o\x1b[0m\n'}
+[0.400729] (-) TimerEvent: {}
+[0.501419] (-) TimerEvent: {}
+[0.602221] (-) TimerEvent: {}
+[0.702833] (-) TimerEvent: {}
+[0.803463] (-) TimerEvent: {}
+[0.904177] (-) TimerEvent: {}
+[1.004855] (-) TimerEvent: {}
+[1.105458] (-) TimerEvent: {}
+[1.206127] (-) TimerEvent: {}
+[1.306720] (-) TimerEvent: {}
+[1.407355] (-) TimerEvent: {}
+[1.508020] (-) TimerEvent: {}
+[1.608661] (-) TimerEvent: {}
+[1.709303] (-) TimerEvent: {}
+[1.809914] (-) TimerEvent: {}
+[1.910519] (-) TimerEvent: {}
+[2.011362] (-) TimerEvent: {}
+[2.112225] (-) TimerEvent: {}
+[2.212912] (-) TimerEvent: {}
+[2.313571] (-) TimerEvent: {}
+[2.414391] (-) TimerEvent: {}
+[2.515083] (-) TimerEvent: {}
+[2.615820] (-) TimerEvent: {}
+[2.716552] (-) TimerEvent: {}
+[2.817350] (-) TimerEvent: {}
+[2.918115] (-) TimerEvent: {}
+[3.018898] (-) TimerEvent: {}
+[3.119575] (-) TimerEvent: {}
+[3.220312] (-) TimerEvent: {}
+[3.321044] (-) TimerEvent: {}
+[3.422748] (-) TimerEvent: {}
+[3.523558] (-) TimerEvent: {}
+[3.625248] (-) TimerEvent: {}
+[3.726569] (-) TimerEvent: {}
+[3.827375] (-) TimerEvent: {}
+[3.928199] (-) TimerEvent: {}
+[4.028908] (-) TimerEvent: {}
+[4.129618] (-) TimerEvent: {}
+[4.230374] (-) TimerEvent: {}
+[4.331191] (-) TimerEvent: {}
+[4.431939] (-) TimerEvent: {}
+[4.532654] (-) TimerEvent: {}
+[4.633452] (-) TimerEvent: {}
+[4.734347] (-) TimerEvent: {}
+[4.835068] (-) TimerEvent: {}
+[4.935813] (-) TimerEvent: {}
+[5.036593] (-) TimerEvent: {}
+[5.137398] (-) TimerEvent: {}
+[5.238148] (-) TimerEvent: {}
+[5.338924] (-) TimerEvent: {}
+[5.439627] (-) TimerEvent: {}
+[5.540595] (-) TimerEvent: {}
+[5.642102] (-) TimerEvent: {}
+[5.742872] (-) TimerEvent: {}
+[5.843578] (-) TimerEvent: {}
+[5.944423] (-) TimerEvent: {}
+[6.045186] (-) TimerEvent: {}
+[6.146033] (-) TimerEvent: {}
+[6.246720] (-) TimerEvent: {}
+[6.347457] (-) TimerEvent: {}
+[6.448205] (-) TimerEvent: {}
+[6.548910] (-) TimerEvent: {}
+[6.649604] (-) TimerEvent: {}
+[6.750313] (-) TimerEvent: {}
+[6.851083] (-) TimerEvent: {}
+[6.952053] (-) TimerEvent: {}
+[7.052732] (-) TimerEvent: {}
+[7.153423] (-) TimerEvent: {}
+[7.254197] (-) TimerEvent: {}
+[7.354908] (-) TimerEvent: {}
+[7.455598] (-) TimerEvent: {}
+[7.556381] (-) TimerEvent: {}
+[7.657141] (-) TimerEvent: {}
+[7.757852] (-) TimerEvent: {}
+[7.858530] (-) TimerEvent: {}
+[7.959291] (-) TimerEvent: {}
+[8.059995] (-) TimerEvent: {}
+[8.160670] (-) TimerEvent: {}
+[8.261391] (-) TimerEvent: {}
+[8.362106] (-) TimerEvent: {}
+[8.462840] (-) TimerEvent: {}
+[8.563525] (-) TimerEvent: {}
+[8.664332] (-) TimerEvent: {}
+[8.765071] (-) TimerEvent: {}
+[8.865869] (-) TimerEvent: {}
+[8.966579] (-) TimerEvent: {}
+[9.067366] (-) TimerEvent: {}
+[9.168099] (-) TimerEvent: {}
+[9.268867] (-) TimerEvent: {}
+[9.369529] (-) TimerEvent: {}
+[9.470312] (-) TimerEvent: {}
+[9.571066] (-) TimerEvent: {}
+[9.671845] (-) TimerEvent: {}
+[9.772567] (-) TimerEvent: {}
+[9.873358] (-) TimerEvent: {}
+[9.974103] (-) TimerEvent: {}
+[10.074846] (-) TimerEvent: {}
+[10.175555] (-) TimerEvent: {}
+[10.276321] (-) TimerEvent: {}
+[10.377066] (-) TimerEvent: {}
+[10.477827] (-) TimerEvent: {}
+[10.578506] (-) TimerEvent: {}
+[10.679273] (-) TimerEvent: {}
+[10.780053] (-) TimerEvent: {}
+[10.880719] (-) TimerEvent: {}
+[10.981440] (-) TimerEvent: {}
+[11.082184] (-) TimerEvent: {}
+[11.182912] (-) TimerEvent: {}
+[11.283630] (-) TimerEvent: {}
+[11.384416] (-) TimerEvent: {}
+[11.485166] (-) TimerEvent: {}
+[11.585932] (-) TimerEvent: {}
+[11.686643] (-) TimerEvent: {}
+[11.787389] (-) TimerEvent: {}
+[11.888128] (-) TimerEvent: {}
+[11.988869] (-) TimerEvent: {}
+[12.089567] (-) TimerEvent: {}
+[12.190320] (-) TimerEvent: {}
+[12.291079] (-) TimerEvent: {}
+[12.391837] (-) TimerEvent: {}
+[12.492584] (-) TimerEvent: {}
+[12.593641] (-) TimerEvent: {}
+[12.694989] (-) TimerEvent: {}
+[12.795721] (-) TimerEvent: {}
+[12.896504] (-) TimerEvent: {}
+[12.997251] (-) TimerEvent: {}
+[13.082424] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:3\x1b[m\x1b[K:\n'}
+[13.083473] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:47:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.084074] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   47 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.084435] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.084759] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.097422] (-) TimerEvent: {}
+[13.107420] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:50:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.108328] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   50 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.108836] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.109210] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.132322] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.133191] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.133716] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.134210] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.157328] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:56:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.158196] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   56 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.158677] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.159103] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.182216] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:59:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.183097] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   59 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.183708] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.184174] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.197589] (-) TimerEvent: {}
+[13.207265] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:62:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.208156] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   62 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.208650] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.209041] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.232253] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.233159] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.233627] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.234067] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.257060] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:68:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.257851] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   68 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.258392] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.258737] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.282034] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:71:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.282992] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   71 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.283462] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.283820] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.297764] (-) TimerEvent: {}
+[13.307019] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:74:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.307849] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   74 |     \x1b[01;31m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_PUBLIC\x1b[m\x1b[K\n'}
+[13.308354] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.308757] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |     \x1b[32m\x1b[KDFROBOT_DC_MOTOR_HARDWARE_HPP_\x1b[m\x1b[K\n'}
+[13.398006] (-) TimerEvent: {}
+[13.487747] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:11:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.489576] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   11 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_init(\n'}
+[13.490730] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.491285] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:11:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.491748] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.492313] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.492862] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.494627] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:58:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<hardware_interface::StateInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kexport_state_interfaces\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.495271] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   58 | std::vector<hardware_interface::StateInterface> \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::export_state_interfaces() {\n'}
+[13.495705] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.496217] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:58:49:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<hardware_interface::StateInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kexport_state_interfaces\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.496701] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.497442] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.498136] (-) TimerEvent: {}
+[13.498605] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.499207] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:71:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<hardware_interface::CommandInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kexport_command_interfaces\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.499697] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   71 | std::vector<hardware_interface::CommandInterface> \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::export_command_interfaces() {\n'}
+[13.500342] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.500914] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:71:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<hardware_interface::CommandInterface> dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kexport_command_interfaces\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.501723] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.502241] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.502648] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.503156] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:82:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_configure\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.503697] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   82 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_configure(\n'}
+[13.504335] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.504984] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:82:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_configure\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.505558] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.506286] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.506734] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.507223] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:91:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_cleanup\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.507639] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   91 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_cleanup(\n'}
+[13.508122] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.508651] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:91:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_cleanup\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.509213] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.509632] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.510165] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.510589] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:103:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_activate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.511395] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  103 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_activate(\n'}
+[13.511909] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.512362] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:103:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_activate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.512760] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.513370] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.513809] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.514346] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:133:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_deactivate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.514758] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  133 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_deactivate(\n'}
+[13.515251] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.515637] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:133:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_deactivate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.516159] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.516580] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.517052] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.517474] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:157:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.517954] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  157 | hardware_interface::return_type \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::read(\n'}
+[13.518387] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.518804] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:157:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.519287] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.519724] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.520357] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.520912] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:184:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.521640] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  184 | hardware_interface::return_type \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::write(\n'}
+[13.522169] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.522582] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:184:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.523082] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.523511] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.523991] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.524563] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:215:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.525371] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  215 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_init(\n'}
+[13.525991] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.526600] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:215:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.527177] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.527604] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.528148] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.528687] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:221:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_configure\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.529305] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  221 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_configure(\n'}
+[13.529800] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.530389] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:221:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_configure\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.530858] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.531536] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.532023] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.532428] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:227:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_cleanup\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.532986] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  227 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_cleanup(\n'}
+[13.533475] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.533939] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:227:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_cleanup\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.534413] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.534846] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.535289] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.535661] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:233:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_activate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.536170] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  233 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_activate(\n'}
+[13.536660] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.537216] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:233:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_activate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.537759] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.538254] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.538632] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.539078] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:239:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_deactivate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.539495] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  239 | hardware_interface::CallbackReturn \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::on_deactivate(\n'}
+[13.540086] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.540630] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:239:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::CallbackReturn dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kon_deactivate\x1b[m\x1b[K(const rclcpp_lifecycle::State&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.541166] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.541633] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.542128] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.542535] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:245:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.543055] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  245 | hardware_interface::return_type \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::read(\n'}
+[13.543735] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.545436] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:245:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.546130] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.546902] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.547747] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.548292] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:251:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.548805] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  251 | hardware_interface::return_type \x1b[01;31m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K::write(\n'}
+[13.549466] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.550217] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:251:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.550666] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass dfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[13.551290] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[13.551716] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.552210] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:257:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefinition of implicitly-declared \xe2\x80\x98\x1b[01m\x1b[Kvirtual dfrobot_dc_motor_hardware::DFRobotDCMotorHardware::\x1b[01;32m\x1b[K~DFRobotDCMotorHardware\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.552666] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  257 | DFRobotDCMotorHardware::~DFRobotDCMotorHardware(\x1b[01;31m\x1b[K)\x1b[m\x1b[K {\n'}
+[13.553142] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.598344] (-) TimerEvent: {}
+[13.699055] (-) TimerEvent: {}
+[13.799743] (-) TimerEvent: {}
+[13.900548] (-) TimerEvent: {}
+[14.001325] (-) TimerEvent: {}
+[14.102068] (-) TimerEvent: {}
+[14.202762] (-) TimerEvent: {}
+[14.303510] (-) TimerEvent: {}
+[14.404251] (-) TimerEvent: {}
+[14.505061] (-) TimerEvent: {}
+[14.606150] (-) TimerEvent: {}
+[14.706831] (-) TimerEvent: {}
+[14.807516] (-) TimerEvent: {}
+[14.908305] (-) TimerEvent: {}
+[15.009067] (-) TimerEvent: {}
+[15.109943] (-) TimerEvent: {}
+[15.210660] (-) TimerEvent: {}
+[15.311499] (-) TimerEvent: {}
+[15.412241] (-) TimerEvent: {}
+[15.512934] (-) TimerEvent: {}
+[15.613623] (-) TimerEvent: {}
+[15.714394] (-) TimerEvent: {}
+[15.815120] (-) TimerEvent: {}
+[15.915875] (-) TimerEvent: {}
+[16.016561] (-) TimerEvent: {}
+[16.117304] (-) TimerEvent: {}
+[16.218051] (-) TimerEvent: {}
+[16.318743] (-) TimerEvent: {}
+[16.419489] (-) TimerEvent: {}
+[16.520325] (-) TimerEvent: {}
+[16.621069] (-) TimerEvent: {}
+[16.721730] (-) TimerEvent: {}
+[16.822442] (-) TimerEvent: {}
+[16.923185] (-) TimerEvent: {}
+[17.023923] (-) TimerEvent: {}
+[17.124875] (-) TimerEvent: {}
+[17.225565] (-) TimerEvent: {}
+[17.326335] (-) TimerEvent: {}
+[17.422324] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58\x1b[m\x1b[K,\n'}
+[17.423369] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[17.423955] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[17.424597] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/dfrobot_dc_motor_hardware.cpp:7\x1b[m\x1b[K:\n'}
+[17.425230] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::\x1b[01;32m\x1b[Kcreate\x1b[m\x1b[K() const \x1b[35m\x1b[K[with C = dfrobot_dc_motor_hardware::DFRobotDCMotorHardware; B = hardware_interface::SystemInterface]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.425823] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[17.426338] (-) TimerEvent: {}
+[17.426681] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.427394] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[17.427965] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[17.428438] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:29:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kdfrobot_dc_motor_hardware::DFRobotDCMotorHardware\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.429010] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'   29 | class \x1b[01;36m\x1b[KDFRobotDCMotorHardware\x1b[m\x1b[K : public hardware_interface::SystemInterface {\n'}
+[17.429541] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.430053] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp:6\x1b[m\x1b[K:\n'}
+[17.430511] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:406:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::\x1b[01;32m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.431132] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  406 |   virtual return_type \x1b[01;36m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[17.431717] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[17.432688] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:417:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::\x1b[01;32m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.433704] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'  417 |   virtual return_type \x1b[01;36m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[17.434731] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[17.526527] (-) TimerEvent: {}
+[17.627229] (-) TimerEvent: {}
+[17.727922] (-) TimerEvent: {}
+[17.759252] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dfrobot_dc_motor_hardware.dir/build.make:76: CMakeFiles/dfrobot_dc_motor_hardware.dir/hardware/dfrobot_dc_motor_hardware.cpp.o] Error 1\n'}
+[17.760377] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dfrobot_dc_motor_hardware.dir/all] Error 2\n'}
+[17.761274] (dfrobot_dc_motor_hardware) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.768570] (dfrobot_dc_motor_hardware) CommandEnded: {'returncode': 2}
+[17.828093] (-) TimerEvent: {}
+[17.930280] (-) TimerEvent: {}
+[17.959634] (dfrobot_dc_motor_hardware) JobEnded: {'identifier': 'dfrobot_dc_motor_hardware', 'rc': 2}
+[17.971414] (-) EventReactorShutdown: {}

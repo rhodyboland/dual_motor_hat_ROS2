@@ -1,0 +1,81 @@
+[0.052s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[0.409s] -- The CXX compiler identification is GNU 13.2.0
+[0.496s] -- Detecting CXX compiler ABI info
+[0.985s] -- Detecting CXX compiler ABI info - done
+[1.024s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.025s] -- Detecting CXX compile features
+[1.026s] -- Detecting CXX compile features - done
+[1.046s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.711s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.258s] -- Found hardware_interface: 4.18.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.525s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.606s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.694s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.763s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.986s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.004s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.127s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.415s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.429s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.482s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.495s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.534s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.574s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.668s] -- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[6.084s] -- Configuring done (6.0s)
+[6.179s] -- Generating done (0.0s)
+[6.190s] -- Build files have been written to: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware
+[6.228s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/rhody/box_bot/src/dfrobot_dc_motor_hardware -DCMAKE_INSTALL_PREFIX=/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware
+[6.234s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4
+[6.551s] [ 33%] [32m[1mLinking CXX shared library libdfrobot_dc_motor_hardware.so[0m
+[7.578s] [100%] Built target dfrobot_dc_motor_hardware
+[7.626s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware -- -j4 -l4
+[7.812s] Invoking command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware
+[7.848s] -- Install configuration: ""
+[7.848s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.xml
+[7.850s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware
+[7.851s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware
+[7.851s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware/visibility_control.h
+[7.852s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp
+[7.854s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp
+[7.855s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware/wheel.hpp
+[7.856s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/launch
+[7.856s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/ros2_control
+[7.857s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/ros2_control/diffbot.ros2_control.xacro
+[7.858s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/urdf
+[7.859s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/urdf/diffbot.urdf.xacro
+[7.860s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/urdf/diffbot.materials.xacro
+[7.861s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/urdf/diffbot_description.urdf.xacro
+[7.862s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/rviz
+[7.863s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/rviz/dfrobot.rviz
+[7.864s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/rviz/dfrobot_view.rviz
+[7.865s] -- Up-to-date: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/launch
+[7.866s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/launch/dfrobot_dc_motor.launch.py
+[7.867s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/config
+[7.867s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/config/dfrobot_dc_motor.yaml
+[7.869s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/lib/libdfrobot_dc_motor_hardware.so
+[7.879s] -- Set non-toolchain portion of runtime path of "/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/lib/libdfrobot_dc_motor_hardware.so" to ""
+[7.880s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/library_path.sh
+[7.881s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/library_path.dsv
+[7.883s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/ament_index/resource_index/package_run_dependencies/dfrobot_dc_motor_hardware
+[7.885s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/ament_index/resource_index/parent_prefix_path/dfrobot_dc_motor_hardware
+[7.886s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/ament_prefix_path.sh
+[7.888s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/ament_prefix_path.dsv
+[7.889s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/path.sh
+[7.890s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/environment/path.dsv
+[7.892s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/local_setup.bash
+[7.893s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/local_setup.sh
+[7.894s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/local_setup.zsh
+[7.896s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/local_setup.dsv
+[7.897s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/package.dsv
+[7.899s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/ament_index/resource_index/packages/dfrobot_dc_motor_hardware
+[7.900s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/dfrobot_dc_motor_hardware
+[7.903s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/export_dfrobot_dc_motor_hardwareExport.cmake
+[7.904s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/export_dfrobot_dc_motor_hardwareExport-noconfig.cmake
+[7.906s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/ament_cmake_export_targets-extras.cmake
+[7.907s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.909s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/dfrobot_dc_motor_hardwareConfig.cmake
+[7.910s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/cmake/dfrobot_dc_motor_hardwareConfig-version.cmake
+[7.911s] -- Installing: /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/install/dfrobot_dc_motor_hardware/share/dfrobot_dc_motor_hardware/package.xml
+[7.919s] Invoked command in '/home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/rhody/box_bot/src/dfrobot_dc_motor_hardware/build/dfrobot_dc_motor_hardware

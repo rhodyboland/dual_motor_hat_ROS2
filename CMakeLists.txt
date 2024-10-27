@@ -1,84 +1,76 @@
-cmake_minimum_required(VERSION 3.5)
-project(dfrobot_dc_motor_hardware)
+cmake_minimum_required(VERSION 3.16)
+project(dfrobot_dc_motor_hardware LANGUAGES CXX)
 
-# Default to C++14
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
+  add_compile_options(-Wall -Wextra)
 endif()
 
-# Find dependencies
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(hardware_interface REQUIRED)
-find_package(pluginlib REQUIRED)
-find_package(ros2_control REQUIRED)
-find_package(nav_msgs REQUIRED)
-find_package(tf2 REQUIRED)
-find_package(tf2_ros REQUIRED)
-find_package(tf2_geometry_msgs REQUIRED) # Added
-find_package(geometry_msgs REQUIRED)
-find_package(std_msgs REQUIRED)
-
-# Include directories
-include_directories(include)
-
-# Declare a C++ library
-add_library(dfrobot_dc_motor_hardware SHARED
-  src/dfrobot_dc_motor_hardware.cpp
-  src/i2c_interface.cpp
-)
-
-# Link dependencies
-ament_target_dependencies(dfrobot_dc_motor_hardware
-  rclcpp
+# find dependencies
+set(THIS_PACKAGE_INCLUDE_DEPENDS
   hardware_interface
   pluginlib
-  ros2_control
-  nav_msgs
-  tf2
-  tf2_ros
-  tf2_geometry_msgs # Added
-  geometry_msgs
-  std_msgs
+  rclcpp
+  rclcpp_lifecycle
 )
 
-# Specify additional include directories for the library
+# find dependencies
+find_package(ament_cmake REQUIRED)
+foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
+  find_package(${Dependency} REQUIRED)
+endforeach()
+
+
+## COMPILE
+add_library(
+  dfrobot_dc_motor_hardware
+  SHARED
+  hardware/dfrobot_dc_motor_hardware.cpp
+  hardware/dfrobot_dc_motor.cpp
+)
+target_compile_features(dfrobot_dc_motor_hardware PUBLIC cxx_std_17)
 target_include_directories(dfrobot_dc_motor_hardware PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
+$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
+$<INSTALL_INTERFACE:include/dfrobot_dc_motor_hardware>
+)
+ament_target_dependencies(
+  dfrobot_dc_motor_hardware PUBLIC
+  ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
-# Install the library
+# target_link_libraries(dfrobot_dc_motor_hardware PUBLIC serial)
+
+# Causes the visibility macros to use dllexport rather than dllimport,
+# which is appropriate when building the dll but not consuming it.
+target_compile_definitions(${PROJECT_NAME} PRIVATE "DFROBOT_DC_MOTOR_HARDWARE_BUILDING_DLL")
+
+# Export hardware plugins
+pluginlib_export_plugin_description_file(hardware_interface dfrobot_dc_motor_hardware.xml)
+
+# INSTALL
+install(
+  DIRECTORY hardware/include/
+  DESTINATION include/dfrobot_dc_motor_hardware
+)
+install(
+  DIRECTORY description/launch description/ros2_control description/urdf description/rviz
+  DESTINATION share/dfrobot_dc_motor_hardware
+)
+install(
+  DIRECTORY bringup/launch bringup/config
+  DESTINATION share/dfrobot_dc_motor_hardware
+)
 install(TARGETS dfrobot_dc_motor_hardware
-  DESTINATION lib/${PROJECT_NAME}
+  EXPORT export_dfrobot_dc_motor_hardware
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
 )
 
-# Install plugin description file
-install(
-  DIRECTORY plugin_description
-  DESTINATION share/${PROJECT_NAME}
-)
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+endif()
 
-# Install header files
-install(
-  DIRECTORY include/
-  DESTINATION include/
-)
-
-# Install configuration files
-install(
-  DIRECTORY config
-  DESTINATION share/${PROJECT_NAME}
-)
-
-# Install launch files
-install(
-  DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}
-)
-
-# Export plugin descriptions
-pluginlib_export_plugin_description_file(hardware_interface plugin_description/hardware_plugins.xml)
-
-# Package
+## EXPORTS
+ament_export_targets(export_dfrobot_dc_motor_hardware HAS_LIBRARY_TARGET)
+ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()
