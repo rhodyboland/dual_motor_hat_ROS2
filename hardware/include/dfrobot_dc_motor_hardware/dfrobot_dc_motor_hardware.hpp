@@ -9,10 +9,10 @@
 
 #include "dfrobot_dc_motor_hardware/dfrobot_dc_motor.hpp"
 #include "dfrobot_dc_motor_hardware/visibility_control.h"
+#include "dfrobot_dc_motor_hardware/wheel.hpp"
 #include "hardware_interface/system_interface.hpp"
 #include "hardware_interface/types/hardware_interface_return_values.hpp"
 #include "rclcpp/macros.hpp"
-#include "wheel.hpp"
 
 namespace dfrobot_dc_motor_hardware {
 class DFRobotDCMotorHardware : public hardware_interface::SystemInterface {
