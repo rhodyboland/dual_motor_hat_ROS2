@@ -6,15 +6,14 @@
   <!-- Constants for robot dimensions -->
   <xacro:property name="PI" value="3.1415926535897931"/>
   <xacro:property name="base_mass" value="0.3" /> <!-- arbitrary value for base mass -->
-  <xacro:property name="base_width" value="0.1" />
-  <xacro:property name="base_length" value="0.1" />
+  <xacro:property name="base_width" value="0.14" />
+  <xacro:property name="base_length" value="0.14" />
   <xacro:property name="base_height" value="0.05" />
   <xacro:property name="wheel_mass" value="0.3" /> <!-- arbitrary value for wheel mass -->
   <xacro:property name="wheel_len" value="0.020" />
-  <xacro:property name="wheel_radius" value="0.015" />
-  <xacro:property name="caster_wheel_mass" value="0.1" /> <!-- arbitrary value for caster wheel mass -->
-  <xacro:property name="caster_wheel_radius" value="0.015" />
-  <xacro:property name="z_offset" value="-${base_height/2}" /> <!-- Space btw top of beam and the each joint -->
+  <xacro:property name="wheel_radius" value="0.0175" />
+  <xacro:property name="imu_height" value="0.01" /> <!-- Height of IMU below top plate -->
+  
 
   <!-- Base Link -->
   <link name="${prefix}base_link">
@@ -30,7 +29,7 @@
       <geometry>
         <box size="${base_width} ${base_length} ${base_height}"/>
       </geometry>
-      <material name="orange"/>
+      <material name="acrylic"/>
     </visual>
 
     <inertial>
@@ -46,7 +45,7 @@
     <joint name="${prefix}left_wheel_joint" type="continuous">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}left_wheel"/>
-      <origin xyz="0 -${base_width/2} ${z_offset}" rpy="0 0 0"/>
+      <origin xyz="0 ${base_width/2} 0" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <dynamics damping="0.2"/>
     </joint>
@@ -65,7 +64,7 @@
         <geometry>
           <cylinder length="${wheel_len}" radius="${wheel_radius}"/>
         </geometry>
-        <material name="black"/>
+        <material name="red"/>
       </visual>
 
       <inertial>
@@ -81,7 +80,7 @@
     <joint name="${prefix}right_wheel_joint" type="continuous">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}right_wheel"/>
-      <origin xyz="0 ${base_width/2} ${z_offset}" rpy="0 0 0"/>
+      <origin xyz="0 -${base_width/2} 0" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
       <dynamics damping="0.2"/>
     </joint>
@@ -100,7 +99,7 @@
         <geometry>
           <cylinder length="${wheel_len}" radius="${wheel_radius}"/>
         </geometry>
-        <material name="black"/>
+        <material name="red"/>
       </visual>
 
       <inertial>
@@ -113,71 +112,39 @@
         </inertial>
       </link>
 
-    <joint name="${prefix}caster_frontal_wheel_joint" type="fixed">
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}caster_frontal_wheel"/>
-      <origin xyz="${base_width/2 - caster_wheel_radius} 0 ${z_offset}" rpy="0 0 0"/>
-    </joint>
-
-    <!-- caster frontal wheel Link -->
-    <link name="${prefix}caster_frontal_wheel">
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <sphere radius="${caster_wheel_radius}"/>
-        </geometry>
-      </collision>
-
+          <!-- IMU Sensor -->
+    <link name="${prefix}imu">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <sphere radius="${caster_wheel_radius}"/>
+          <box size="0.02 0.02 0.01"/>
         </geometry>
-        <material name="white"/>
+        <material name="red"/>
       </visual>
+    </link>
 
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="${caster_wheel_mass}"/>
-        <inertia
-          ixx="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}" ixy="0.0" ixz="0.0"
-          iyy="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}" iyz="0.0"
-          izz="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}"/>
-        </inertial>
-      </link>
-
-    <joint name="${prefix}caster_rear_wheel_joint" type="fixed">
+    <joint name="${prefix}imu_joint" type="fixed">
       <parent link="${prefix}base_link"/>
-      <child link="${prefix}caster_rear_wheel"/>
-      <origin xyz="${-base_width/2 + caster_wheel_radius} 0 ${z_offset}" rpy="0 0 0"/>
+      <child link="${prefix}imu"/>
+      <origin xyz="0 0 ${base_height - imu_height}" rpy="0 0 0"/>
     </joint>
 
-    <!-- caster rear wheel Link -->
-    <link name="${prefix}caster_rear_wheel">
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <sphere radius="${caster_wheel_radius}"/>
-        </geometry>
-      </collision>
-
+          <!-- Lidar Sensor -->
+    <link name="${prefix}laser">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <sphere radius="${caster_wheel_radius}"/>
+          <box size="0.055 0.055 0.04"/>
         </geometry>
-        <material name="white"/>
+        <material name="black"/>
       </visual>
+    </link>
 
-      <inertial>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="${caster_wheel_mass}"/>
-        <inertia
-          ixx="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}" ixy="0.0" ixz="0.0"
-          iyy="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}" iyz="0.0"
-          izz="${caster_wheel_mass * 0.4 * (caster_wheel_radius * caster_wheel_radius)}"/>
-        </inertial>
-      </link>
+    <joint name="${prefix}laser_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}laser"/>
+      <origin xyz="-0.01 0 ${base_height + 0.02}" rpy="0 0 ${PI}"/>
+    </joint>
 
   </xacro:macro>
 

@@ -123,7 +123,9 @@ hardware_interface::return_type DFRobotDCMotorHardware::read(
     int16_t rpm_r = dfrobot_->getEncoderSpeed(DFRobotDCMotor::M2);
 
     // Log raw encoder readings
-    // RCLCPP_INFO(this->get_logger(), "Raw Encoder Readings - Left RPM: %d, Right RPM: %d", rpm_l, rpm_r);
+    if ((rpm_l > 0) || (rpm_r > 0)) {
+        RCLCPP_INFO(this->get_logger(), "Raw Encoder Readings - Left RPM: %d, Right RPM: %d", rpm_l, rpm_r);
+    }
 
     // Convert RPM to rad/s
     wheel_l_.vel = rpm_l * 2 * M_PI / 60.0;

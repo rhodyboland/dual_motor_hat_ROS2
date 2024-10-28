@@ -20,6 +20,9 @@ https://github.com/ros-simulation/gazebo_ros_demos/blob/kinetic-devel/rrbot_desc
   <material name="grey">
     <color rgba="0.2 0.2 0.2 1.0"/>
   </material>
+  <material name="acrylic">
+    <color rgba="0.2 0.2 0.2 0.5"/>
+  </material>
 
   <material name="orange">
     <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
