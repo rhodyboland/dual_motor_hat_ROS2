@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 #include <cstring>
-#include <iostream>
+#include <rclcpp/rclcpp.hpp>
 
 DFRobotDCMotor::DFRobotDCMotor(int bus_id, uint8_t addr) : bus_id_(bus_id), addr_(addr) {
     file_i2c_ = -1;
@@ -25,33 +25,33 @@ bool DFRobotDCMotor::begin() {
 
     if ((file_i2c_ = open(bus_name.c_str(), O_RDWR)) < 0) {
         // Failed to open the bus
-        std::cerr << "Failed to open the I2C bus\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Failed to open the I2C bus");
         return false;
     }
 
     // Set the I2C slave address
     if (ioctl(file_i2c_, I2C_SLAVE, addr_) < 0) {
         // Failed to acquire bus access and/or talk to slave
-        std::cerr << "Failed to acquire bus access and/or talk to slave\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Failed to acquire bus access and/or talk to slave");
         return false;
     }
 
     // Read PID and VID to confirm the device is connected
     std::vector<uint8_t> pid(1);
     if (!readBytes(_REG_PID, 1, pid)) {
-        std::cerr << "Failed to read PID\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Failed to read PID");
         return false;
     }
 
     std::vector<uint8_t> vid(1);
     if (!readBytes(_REG_PVD, 1, vid)) {
-        std::cerr << "Failed to read VID\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Failed to read VID");
         return false;
     }
 
     if (pid[0] != _REG_DEF_PID) {
         // Device not detected
-        std::cerr << "Device not detected\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Device not detected");
         return false;
     } else {
         // Set control mode, stop motors, disable encoders
@@ -99,7 +99,7 @@ int16_t DFRobotDCMotor::getEncoderSpeed(uint8_t id) {
     }
     std::vector<uint8_t> buf(2);
     if (!readBytes(reg, 2, buf)) {
-        std::cerr << "Failed to read encoder speed\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Failed to read encoder speed");
         return 0;
     }
     int16_t speed = (buf[0] << 8) | buf[1];
@@ -111,7 +111,7 @@ int16_t DFRobotDCMotor::getEncoderSpeed(uint8_t id) {
 
 void DFRobotDCMotor::setMotorPWMFrequency(uint16_t frequency) {
     if (frequency < 100 || frequency > 12750) {
-        std::cerr << "Frequency out of range\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Frequency out of range");
         return;
     }
     frequency = frequency / 50;
@@ -121,11 +121,11 @@ void DFRobotDCMotor::setMotorPWMFrequency(uint16_t frequency) {
 
 void DFRobotDCMotor::motorMovement(uint8_t id, uint8_t orientation, float speed) {
     if (orientation != CW && orientation != CCW) {
-        std::cerr << "Invalid orientation\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Invalid orientation");
         return;
     }
     if (speed < 0.0 || speed > 100.0) {
-        std::cerr << "Speed out of range\n";
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotor"), "Speed out of range");
         return;
     }
     uint8_t reg_orientation = _REG_MOTOR1_ORIENTATION;
@@ -136,6 +136,7 @@ void DFRobotDCMotor::motorMovement(uint8_t id, uint8_t orientation, float speed)
     }
     uint8_t speed_int = static_cast<uint8_t>(speed);
     uint8_t speed_dec = static_cast<uint8_t>((speed - speed_int) * 10);
+    // RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotor"), "Speed_int: %d, speed_dec: %d", speed_int, speed_dec);
     writeBytes(reg_orientation, {orientation});
     writeBytes(reg_speed, {speed_int, speed_dec});
 }

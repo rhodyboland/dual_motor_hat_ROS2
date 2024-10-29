@@ -122,10 +122,10 @@ hardware_interface::return_type DFRobotDCMotorHardware::read(
     int16_t rpm_l = -dfrobot_->getEncoderSpeed(DFRobotDCMotor::M1);
     int16_t rpm_r = dfrobot_->getEncoderSpeed(DFRobotDCMotor::M2);
 
-    // Log raw encoder readings
-    if ((rpm_l > 0) || (rpm_r > 0)) {
-        RCLCPP_INFO(this->get_logger(), "Raw Encoder Readings - Left RPM: %d, Right RPM: %d", rpm_l, rpm_r);
-    }
+    // // Log raw encoder readings
+    // if ((rpm_l > 0) || (rpm_r > 0)) {
+    //     RCLCPP_INFO(this->get_logger(), "Raw Encoder Readings - Left RPM: %d, Right RPM: %d", rpm_l, rpm_r);
+    // }
 
     // Convert RPM to rad/s
     wheel_l_.vel = rpm_l * 2 * M_PI / 60.0;
@@ -149,16 +149,14 @@ hardware_interface::return_type DFRobotDCMotorHardware::write(
     // Convert desired velocities to RPM
     double rpm_l = wheel_l_.cmd * 60.0 / (2 * M_PI);
     double rpm_r = wheel_r_.cmd * 60.0 / (2 * M_PI);
-    if ((rpm_l > 0) || (rpm_r > 0)) {
-        RCLCPP_INFO(this->get_logger(), "Commanding Left: %.3f, Right: %.3f", rpm_l, rpm_r);
-    }
+
     // Clamp RPM to max RPM
     rpm_l = std::max(std::min(rpm_l, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
     rpm_r = std::max(std::min(rpm_r, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
 
     // Convert RPM to speed percentage
-    float speed_percent_l = std::abs(rpm_l) / cfg_.max_rpm * 100.0f;
-    float speed_percent_r = std::abs(rpm_r) / cfg_.max_rpm * 100.0f;
+    float speed_percent_l = std::abs(rpm_l) / cfg_.max_rpm * 99.0f;
+    float speed_percent_r = std::abs(rpm_r) / cfg_.max_rpm * 99.0f;
 
     // Determine orientation
     uint8_t orientation_l = rpm_l >= 0 ? DFRobotDCMotor::CCW : DFRobotDCMotor::CW;
@@ -167,6 +165,10 @@ hardware_interface::return_type DFRobotDCMotorHardware::write(
     // Send commands to motor driver
     dfrobot_->motorMovement(DFRobotDCMotor::M1, orientation_l, speed_percent_l);
     dfrobot_->motorMovement(DFRobotDCMotor::M2, orientation_r, speed_percent_r);
+
+    // if ((rpm_l > 0) || (rpm_r > 0)) {
+    //     RCLCPP_INFO(this->get_logger(), "Commanding Left: %.2f, Right: %.2f", speed_percent_l, speed_percent_r);
+    // }
 
     return hardware_interface::return_type::OK;
 }

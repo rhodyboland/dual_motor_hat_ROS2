@@ -7,10 +7,10 @@
 #include <linux/i2c-dev.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
-
 #include <cstdint>
 #include <string>
 #include <vector>
+#include "rclcpp/macros.hpp"
 
 class DFRobotDCMotor {
    public:
