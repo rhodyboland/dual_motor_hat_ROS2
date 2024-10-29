@@ -149,7 +149,9 @@ hardware_interface::return_type DFRobotDCMotorHardware::write(
     // Convert desired velocities to RPM
     double rpm_l = wheel_l_.cmd * 60.0 / (2 * M_PI);
     double rpm_r = wheel_r_.cmd * 60.0 / (2 * M_PI);
-
+    if ((rpm_l > 0) || (rpm_r > 0)) {
+        RCLCPP_INFO(this->get_logger(), "Commanding Left: %.3f, Right: %.3f", rpm_l, rpm_r);
+    }
     // Clamp RPM to max RPM
     rpm_l = std::max(std::min(rpm_l, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
     rpm_r = std::max(std::min(rpm_r, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
