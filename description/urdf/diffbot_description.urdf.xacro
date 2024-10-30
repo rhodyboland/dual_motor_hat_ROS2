@@ -122,7 +122,7 @@
       </link>
 
           <!-- IMU Sensor -->
-    <link name="${prefix}imu">
+    <link name="${prefix}imu_link">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
@@ -134,7 +134,7 @@
 
     <joint name="${prefix}imu_joint" type="fixed">
       <parent link="${prefix}base_link"/>
-      <child link="${prefix}imu"/>
+      <child link="${prefix}imu_link"/>
       <origin xyz="0 0 ${base_height - imu_height}" rpy="0 0 0"/>
     </joint>
 
