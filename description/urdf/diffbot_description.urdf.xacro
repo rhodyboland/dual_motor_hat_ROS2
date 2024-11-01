@@ -125,7 +125,7 @@
           <!-- IMU Sensor -->
     <link name="${prefix}imu_link">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 ${pi} ${pi / 2}"/>
         <geometry>
           <box size="0.02 0.02 0.01"/>
         </geometry>
@@ -154,6 +154,32 @@
       <parent link="${prefix}base_link"/>
       <child link="${prefix}laser"/>
       <origin xyz="0 0 ${base_height + 0.02}" rpy="0 0 ${PI}"/>
+    </joint>
+
+
+    <!-- Camera -->
+    <link name="${prefix}camera_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.01 0.025 0.025"/>
+        </geometry>
+        <material name="green"/>
+      </visual>
+    </link>
+
+    <joint name="${prefix}camera_joint" type="fixed">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}camera_link"/>
+      <origin xyz="0.08 0 ${base_height - imu_height}" rpy="0 0 0"/>
+    </joint>
+
+    <link name="${prefix}camera_link_optical"></link>
+
+    <joint name="${prefix}camera_optical_joint" type="fixed">
+      <parent link="${prefix}camera_link"/>
+      <child link="${prefix}camera_link_optical"/>
+      <origin xyz="0 0 0" rpy="${-PI/2} 0 ${-PI/2}"/>
     </joint>
 
   </xacro:macro>
