@@ -1,4 +1,4 @@
-// src/dfrobot_dc_motor_hardware.cpp
+// hardware/dfrobot_dc_motor_hardware.cpp
 
 #include "dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp"
 
@@ -19,7 +19,7 @@ hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_init(
         cfg_.right_wheel_name = info.hardware_parameters.at("right_wheel_name");
         cfg_.bus_id = std::stoi(info.hardware_parameters.at("bus_id"));
         cfg_.i2c_address = static_cast<uint8_t>(std::stoi(info.hardware_parameters.at("i2c_address")));
-        cfg_.encoder_reduction_ratio = std::stoi(info.hardware_parameters.at("encoder_reduction_ratio"));
+        cfg_.ticks_per_revolution = std::stoi(info.hardware_parameters.at("ticks_per_revolution"));
         cfg_.max_rpm = std::stoi(info.hardware_parameters.at("max_rpm"));
     } catch (const std::out_of_range& e) {
         RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotorHardware"),
@@ -31,8 +31,8 @@ hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_init(
         return hardware_interface::CallbackReturn::ERROR;
     }
 
-    wheel_l_.setup(cfg_.left_wheel_name, cfg_.encoder_reduction_ratio);
-    wheel_r_.setup(cfg_.right_wheel_name, cfg_.encoder_reduction_ratio);
+    wheel_l_.setup(cfg_.left_wheel_name);
+    wheel_r_.setup(cfg_.right_wheel_name);
 
     max_speed_ = cfg_.max_rpm * 2 * M_PI / 60.0;  // Convert RPM to rad/s
 
@@ -93,10 +93,7 @@ hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_cleanup(
 hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_activate(
     const rclcpp_lifecycle::State& /*previous_state*/) {
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Activating ...please wait...");
-    dfrobot_->setEncoderEnable(DFRobotDCMotor::M1);
-    dfrobot_->setEncoderEnable(DFRobotDCMotor::M2);
-    dfrobot_->setEncoderReductionRatio(DFRobotDCMotor::M1, cfg_.encoder_reduction_ratio);
-    dfrobot_->setEncoderReductionRatio(DFRobotDCMotor::M2, cfg_.encoder_reduction_ratio);
+    // Any activation code if necessary
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Successfully activated!");
 
     return hardware_interface::CallbackReturn::SUCCESS;
@@ -105,10 +102,8 @@ hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_activate(
 hardware_interface::CallbackReturn DFRobotDCMotorHardware::on_deactivate(
     const rclcpp_lifecycle::State& /*previous_state*/) {
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Deactivating ...please wait...");
-    dfrobot_->motorStop(DFRobotDCMotor::M1);
-    dfrobot_->motorStop(DFRobotDCMotor::M2);
-    dfrobot_->setEncoderDisable(DFRobotDCMotor::M1);
-    dfrobot_->setEncoderDisable(DFRobotDCMotor::M2);
+    // Stop the motors
+    dfrobot_->setRawMotorSpeed(0, 0);
     RCLCPP_INFO(rclcpp::get_logger("DFRobotDCMotorHardware"), "Successfully deactivated!");
 
     return hardware_interface::CallbackReturn::SUCCESS;
@@ -118,63 +113,55 @@ hardware_interface::return_type DFRobotDCMotorHardware::read(
     const rclcpp::Time& /*time*/, const rclcpp::Duration& period) {
     double delta_seconds = period.seconds();
 
-    // Get encoder speeds in RPM
-    int16_t rpm_l = -dfrobot_->getEncoderSpeed(DFRobotDCMotor::M1);
-    int16_t rpm_r = dfrobot_->getEncoderSpeed(DFRobotDCMotor::M2);
+    int16_t left_ticks = 0;
+    int16_t right_ticks = 0;
 
-    // // Log raw encoder readings
-    // if ((rpm_l > 0) || (rpm_r > 0)) {
-    //     RCLCPP_INFO(this->get_logger(), "Raw Encoder Readings - Left RPM: %d, Right RPM: %d", rpm_l, rpm_r);
-    // }
+    if (!dfrobot_->getEncoderTicks(left_ticks, right_ticks)) {
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotorHardware"), "Failed to read encoder ticks");
+        return hardware_interface::return_type::ERROR;
+    }
 
-    // Convert RPM to rad/s
-    wheel_l_.vel = rpm_l * 2 * M_PI / 60.0;
-    wheel_r_.vel = rpm_r * 2 * M_PI / 60.0;
+    // Convert ticks to radians
+    double delta_pos_left = (left_ticks / static_cast<double>(cfg_.ticks_per_revolution)) * 2 * M_PI;
+    double delta_pos_right = (right_ticks / static_cast<double>(cfg_.ticks_per_revolution)) * 2 * M_PI;
 
-    // Log converted velocities
-    // RCLCPP_INFO(this->get_logger(), "Converted Velocities - Left rad/s: %.3f, Right rad/s: %.3f", wheel_l_.vel, wheel_r_.vel);
+    // Update positions
+    wheel_l_.pos += delta_pos_left;
+    wheel_r_.pos += delta_pos_right;
 
-    // Integrate to get position
-    wheel_l_.pos += wheel_l_.vel * delta_seconds;
-    wheel_r_.pos += wheel_r_.vel * delta_seconds;
-
-    // Log updated positions
-    // RCLCPP_INFO(this->get_logger(), "Updated Positions - Left pos: %.3f, Right pos: %.3f", wheel_l_.pos, wheel_r_.pos);
+    // Update velocities
+    wheel_l_.vel = delta_pos_left / delta_seconds;
+    wheel_r_.vel = delta_pos_right / delta_seconds;
 
     return hardware_interface::return_type::OK;
 }
 
 hardware_interface::return_type DFRobotDCMotorHardware::write(
     const rclcpp::Time& /*time*/, const rclcpp::Duration& /*period*/) {
-    // Convert desired velocities to RPM
-    double rpm_l = wheel_l_.cmd * 60.0 / (2 * M_PI);
-    double rpm_r = wheel_r_.cmd * 60.0 / (2 * M_PI);
+    // Convert desired velocities to motor commands (-127 to 127)
+    double motor_command_left = (wheel_l_.cmd / max_speed_) * 127.0;
+    double motor_command_right = (wheel_r_.cmd / max_speed_) * 127.0;
 
-    // Clamp RPM to max RPM
-    rpm_l = std::max(std::min(rpm_l, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
-    rpm_r = std::max(std::min(rpm_r, static_cast<double>(cfg_.max_rpm)), -static_cast<double>(cfg_.max_rpm));
+    // Clamp to -127 to 127
+    motor_command_left = std::max(std::min(motor_command_left, 127.0), -127.0);
+    motor_command_right = std::max(std::min(motor_command_right, 127.0), -127.0);
 
-    // Convert RPM to speed percentage
-    float speed_percent_l = std::abs(rpm_l) / cfg_.max_rpm * 99.0f;
-    float speed_percent_r = std::abs(rpm_r) / cfg_.max_rpm * 99.0f;
-
-    // Determine orientation
-    uint8_t orientation_l = rpm_l >= 0 ? DFRobotDCMotor::CCW : DFRobotDCMotor::CW;
-    uint8_t orientation_r = rpm_r >= 0 ? DFRobotDCMotor::CCW : DFRobotDCMotor::CW;
+    // Cast to int8_t
+    int8_t left_command = static_cast<int8_t>(motor_command_left);
+    int8_t right_command = static_cast<int8_t>(motor_command_right);
 
     // Send commands to motor driver
-    dfrobot_->motorMovement(DFRobotDCMotor::M1, orientation_l, speed_percent_l);
-    dfrobot_->motorMovement(DFRobotDCMotor::M2, orientation_r, speed_percent_r);
-
-    // if ((rpm_l > 0) || (rpm_r > 0)) {
-    //     RCLCPP_INFO(this->get_logger(), "Commanding Left: %.2f, Right: %.2f", speed_percent_l, speed_percent_r);
-    // }
+    if (!dfrobot_->setRawMotorSpeed(left_command, right_command)) {
+        RCLCPP_ERROR(rclcpp::get_logger("DFRobotDCMotorHardware"), "Failed to set motor speed");
+        return hardware_interface::return_type::ERROR;
+    }
 
     return hardware_interface::return_type::OK;
 }
 
 }  // namespace dfrobot_dc_motor_hardware
 
+// Plugin registration
 #include "pluginlib/class_list_macros.hpp"
 PLUGINLIB_EXPORT_CLASS(
     dfrobot_dc_motor_hardware::DFRobotDCMotorHardware, hardware_interface::SystemInterface)

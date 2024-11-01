@@ -1,4 +1,4 @@
-// visibility_control.h
+// hardware/include/dfrobot_dc_motor_hardware/visibility_control.h
 
 #ifndef DFROBOT_DC_MOTOR_HARDWARE__VISIBILITY_CONTROL_H_
 #define DFROBOT_DC_MOTOR_HARDWARE__VISIBILITY_CONTROL_H_

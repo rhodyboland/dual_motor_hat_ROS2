@@ -1,3 +1,5 @@
+// hardware/include/dfrobot_dc_motor_hardware/dfrobot_dc_motor_hardware.hpp
+
 #ifndef DFROBOT_DC_MOTOR_HARDWARE_HPP_
 #define DFROBOT_DC_MOTOR_HARDWARE_HPP_
 
@@ -52,9 +54,9 @@ class DFROBOT_DC_MOTOR_HARDWARE_PUBLIC DFRobotDCMotorHardware : public hardware_
         std::string left_wheel_name = "";
         std::string right_wheel_name = "";
         int bus_id = 1;
-        uint8_t i2c_address = 0x10;
-        int encoder_reduction_ratio = 210;
-        int max_rpm = 75;
+        uint8_t i2c_address = 0x57;
+        int ticks_per_revolution = 5880;  // Update as per your encoder specs
+        int max_rpm = 75;                 // Update as per your motor specs
     };
 
     Config cfg_;
