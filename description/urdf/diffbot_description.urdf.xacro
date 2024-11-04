@@ -136,7 +136,7 @@
     <joint name="${prefix}imu_joint" type="fixed">
       <parent link="${prefix}base_link"/>
       <child link="${prefix}imu_link"/>
-      <origin xyz="0.02 0 ${base_height - imu_height}" rpy="0 0 0"/>
+      <origin xyz="0.02 0.005 ${base_height - imu_height}" rpy="0 0 0"/>
     </joint>
 
           <!-- Lidar Sensor -->
